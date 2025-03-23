@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Task 1</title>
+  </head>
+  <body>
+    <div class="container1 overlay">
+      <button class="carousel-btn left-btn">&#10094;</button>
+      <button class="carousel-btn right-btn">&#10095;</button>
+
+      <nav class="navbar">
+        <ul class="first-ul">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Room & Suites</a></li>
+          <li><a href="#">Dining & Bar</a></li>
+        </ul>
+
+        <img src="" alt="LOGO" />
+
+        <ul class="second-ul">
+          <li><a href="#">Conferences</a></li>
+          <li><a href="#">Virtual Tour</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <main class="main">
+        <img src="images/stars.png" alt="star" />
+        <h5>welcome to</h5>
+        <h1>Mash Park Hotel</h1>
+        <p>
+          This authentic yet modern hotel is nestled just off Ngong Road
+          <br />
+          and its intricate mixture of features and facilities are ideallly
+          <br />
+          crafted for the discerning business travellers in Nairobi.
+        </p>
+      </main>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const images = ["images/bg.png", "images/bg1.png", "images/bg2.png"];
+
+        let currentIndex = 0;
+        const container = document.querySelector(".container1");
+        const leftBtn = document.querySelector(".left-btn");
+        const rightBtn = document.querySelector(".right-btn");
+
+        function changeBackground(index) {
+          container.style.backgroundImage = `url(${images[index]})`;
+        }
+
+        function nextImage() {
+          currentIndex = (currentIndex + 1) % images.length;
+          changeBackground(currentIndex);
+        }
+
+        function prevImage() {
+          currentIndex = (currentIndex + 1) % images.length;
+          changeBackground(currentIndex);
+        }
+
+        rightBtn.addEventListener("click", nextImage);
+        leftBtn.addEventListener("click", prevImage);
+
+        setInterval(nextImage, 5000);
+      });
+    </script>
+  </body>
+</html>
