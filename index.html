@@ -8,17 +8,21 @@
   </head>
   <body>
     <div class="container1 overlay">
+      <!-- Left & Right Buttons for the Carousel -->
       <button class="carousel-btn left-btn">&#10094;</button>
       <button class="carousel-btn right-btn">&#10095;</button>
 
+      <!-- Navbar -->
       <nav class="navbar">
         <ul class="first-ul">
-          <li><a href="#">Home</a></li>
+          <li><a href="#" class="active">Home</a></li>
           <li><a href="#">Room & Suites</a></li>
           <li><a href="#">Dining & Bar</a></li>
         </ul>
 
-        <img src="" alt="LOGO" />
+        <div class="logo">
+          <img src="images/logo.png" alt="LOGO" />
+        </div>
 
         <ul class="second-ul">
           <li><a href="#">Conferences</a></li>
@@ -26,6 +30,8 @@
           <li><a href="#">Contact Us</a></li>
         </ul>
       </nav>
+
+      <!-- Main Content -->
       <main class="main">
         <img src="images/stars.png" alt="star" />
         <h5>welcome to</h5>
@@ -38,35 +44,28 @@
           crafted for the discerning business travellers in Nairobi.
         </p>
       </main>
+
+      <!-- Overlay at the Center -->
+      <article class="booking-section">
+        <div class="booking-item">
+          <h3>Easy Booking <br />At Low Rates</h3>
+        </div>
+        <div class="booking-item">
+          <p>Check-In</p>
+          <strong>13 Nov 2019</strong>
+        </div>
+        <div class="booking-item">
+          <p>Check-Out</p>
+          <strong>18 Nov 2019</strong>
+        </div>
+        <div class="booking-item">
+          <button class="booking-btn">Check Availability and prices</button>
+        </div>
+      </article>
     </div>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const images = ["images/bg.png", "images/bg1.png", "images/bg2.png"];
 
-        let currentIndex = 0;
-        const container = document.querySelector(".container1");
-        const leftBtn = document.querySelector(".left-btn");
-        const rightBtn = document.querySelector(".right-btn");
+    <div class="container2"></div>
 
-        function changeBackground(index) {
-          container.style.backgroundImage = `url(${images[index]})`;
-        }
-
-        function nextImage() {
-          currentIndex = (currentIndex + 1) % images.length;
-          changeBackground(currentIndex);
-        }
-
-        function prevImage() {
-          currentIndex = (currentIndex + 1) % images.length;
-          changeBackground(currentIndex);
-        }
-
-        rightBtn.addEventListener("click", nextImage);
-        leftBtn.addEventListener("click", prevImage);
-
-        setInterval(nextImage, 5000);
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
