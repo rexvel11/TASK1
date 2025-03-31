@@ -90,7 +90,7 @@
 /* Main Content */
 .main img {
   display: block;
-  margin-top: 160px;
+  margin-top: 165px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -179,4 +179,37 @@
   background-position: center;
   background-size: cover;
   padding: 20px;
+}
+
+.left-aside {
+  position: relative;
+  width: 60%;
+  align-items: center;
+  margin: 125px 75px;
+  padding: 50px;
+}
+
+.left-aside > h2 {
+  margin-bottom: 25px;
+}
+
+.left-aside > p {
+  margin-bottom: 35px;
+}
+
+.left-aside a {
+  font-size: 18px;
+  color: red;
+  text-decoration: none;
+}
+
+.right-img {
+  position: absolute;
+  top: 140px;
+  left: 620px;
+}
+
+.right-img img {
+  width: 500px;
+  height: 360px;
 }
