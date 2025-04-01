@@ -170,7 +170,7 @@
   background: darkgoldenrod;
 }
 
-/* Container 2 */
+/* Container 2 or Page 2 */
 .container2 {
   position: relative;
   width: 100%;
@@ -185,7 +185,7 @@
   position: relative;
   width: 60%;
   align-items: center;
-  margin: 125px 75px;
+  margin: 130px 75px;
   padding: 50px;
 }
 
@@ -194,10 +194,25 @@
 }
 
 .left-aside > p {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
+  padding: 10px 0;
 }
 
 .left-aside a {
+  font-size: 18px;
+  color: red;
+  text-decoration: none;
+}
+
+.left-aside > img {
+  width: 440px;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.left-aside a {
+  display: block;
   font-size: 18px;
   color: red;
   text-decoration: none;
@@ -212,4 +227,96 @@
 .right-img img {
   width: 500px;
   height: 360px;
+}
+
+/* Container 3 or Page 3 */
+.container3 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: whitesmoke;
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.left-img {
+  position: absolute;
+  margin: 130px 100px;
+}
+
+.left-img img {
+  width: 520px;
+  height: 400px;
+}
+
+/* For page 4 */
+.left-img1 {
+  position: absolute;
+  margin: 0 0 0 600px;
+}
+
+.left-img1 img {
+  width: 520px;
+  height: 400px;
+}
+
+/* for page 5 */
+.left-img2 {
+  position: absolute;
+  margin: 0 0 50px 100px;
+}
+
+.left-img2 img {
+  width: 520px;
+  height: 400px;
+}
+
+.right-aside {
+  position: relative;
+  width: 60%;
+  align-items: center;
+  margin: 135px 50px 130px auto;
+  padding: 50px;
+  transform: translateX(180px);
+}
+
+.right-aside h2 {
+  margin-bottom: 25px;
+}
+
+.right-aside p {
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.right-aside > img {
+  width: 440px;
+  height: 50px;
+  margin-bottom: 40px;
+}
+
+.right-aside a {
+  display: block;
+  font-size: 18px;
+  color: red;
+  text-decoration: none;
+}
+
+/* Container 4 or page 4 */
+.container4 {
+  position: relative;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery {
+  align-items: center;
+  text-align: center;
+  background-color: #dedede;
+  padding: 40px;
+  font-size: 24px;
+  font-weight: bold;
 }
