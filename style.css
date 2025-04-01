@@ -42,11 +42,11 @@
   color: rgb(255, 213, 0);
 }
 
-.left-btn {
+.left-btn-bg {
   left: 20px;
 }
 
-.right-btn {
+.right-btn-bg {
   right: 20px;
 }
 
